@@ -1,0 +1,126 @@
+.navdown, .side-down {
+  position: absolute;
+  width: 300px;
+  height: 91vh;
+  padding: 25px;
+  background-color: black;
+  border: 2px solid #C704F6;
+  border-radius: 4px;
+      box-shadow: 0px 0px 9px #C704F6;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+    animation: moveInTop 0.7s ease-out;
+
+     @keyframes moveInTop {
+      0% {
+        opacity: 0;
+        transform: translateX(-20rem); }
+      100% {
+        opacity: 1;
+        transform: translateY(0); } }
+}
+
+.side-down {
+  height: 91.5vh;
+  position: absolute;
+  top: 2px;
+  left: 15px;
+}
+
+.sidenav, .side-skill {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16%;
+    left: 36%;
+    padding-bottom: 0px;
+}
+
+
+.sidenav a {
+ 
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  transition: 0.3s;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  border-bottom: 1px solid #C704F6;
+}
+
+.side-skill a {
+ padding-bottom: 15px;
+  padding-top: 15px;
+   text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  transition: 0.3s;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  border-bottom: 1px solid #C704F6;
+}
+
+.sidenav {
+  a {
+  &:hover {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+  }
+}
+}
+
+.side-skill a:hover {
+   color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+}
+
+.exit {
+  position: absolute;
+  top: 6.65%;
+  left: 8.3%;
+ 
+  transform: translate(-50%, -50%);
+  width: 53px;
+}
+
+/* Style the Un-order list by setting its list-style to none */
+.exit ul {
+  list-style: none;
+}
+
+.exit ul li {
+  width: 47px;
+  height: 47px;
+  line-height: 58px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #C704F6;
+  float: left;
+  transition: all 0.5s ease;
+
+}
+
+.exit ul li .fa {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.exit ul li:hover .exitmenu {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.exit ul li:hover .fa-times {
+  color: #D8E2DC;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}

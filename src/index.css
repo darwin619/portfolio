@@ -1,0 +1,14 @@
+* {
+		margin: 0px;
+	    padding: 0px;
+	    font-family: "Fjalla One";
+ }
+
+html {
+	  background: black no-repeat center center fixed;
+	  background-size: cover;
+	  height: 100%;
+	  overflow: hidden;
+}
+
+/*Components/Background/Kards10/images/intro-bg.jpg*/

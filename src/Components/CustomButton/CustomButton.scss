@@ -1,0 +1,23 @@
+.register-button {  
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #0865F1 0%, #C704F6 100%);
+    border-image-slice: 1;
+  
+    background: transparent;
+    color: #000;
+    font-size: 1.57em;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: white;
+    background: linear-gradient(to right, #0865F1, #C704F6);
+    color: #fff;
+}
