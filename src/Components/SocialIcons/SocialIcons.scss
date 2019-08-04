@@ -1,15 +1,15 @@
 /* Let's style the wrapper in such away that, 
 it should always be at the center of the browser */
 .wrapper {
-  position: absolute;
-  top: -8%;
-  left: 93%;
-  transform: translate(-50%, -50%);
   width: 530px;
+  display: inline-block;
+  position: absolute;
+  top:-11.5%;
+  left: 74%;
    @media screen and (max-width: 600px) {
-          top: 45%;
-          left: 70%;
-          width: 500px;
+    position: absolute;
+         left: 32%;
+         top: -11.25%;
 }
 }
 
