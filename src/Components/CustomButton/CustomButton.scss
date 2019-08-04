@@ -1,7 +1,8 @@
 .register-button {  
     border: 2px solid transparent;
-    border-image: linear-gradient(to right, #0865F1 0%, #C704F6 100%);
     border-image-slice: 1;
+    -webkit-border-image: linear-gradient(to right, #0865F1 0%, #C704F6 100%);
+    border-image: linear-gradient(to right, #0865F1 0%, #C704F6 100%);
   
     background: transparent;
     color: #000;
