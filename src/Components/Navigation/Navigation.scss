@@ -1,15 +1,8 @@
 /* Let's style the wrapper in such away that, 
 it should always be at the center of the browser */
 .navigation {
-  position: absolute;
-  top: -7.2%;
-  left: 2.2%;
- 
-  transform: translate(-50%, -50%);
-  width: 53px;
+   
   @media screen and (max-width: 600px) {
-          left: 7.5%;
-          top: -8%;
 }
 }
 
@@ -60,10 +53,11 @@ it should always be at the center of the browser */
   margin: 0 10px;
   text-align: center;
   cursor: pointer;
-  border-radius: 70%;
-  border: 2px solid #C704F6;
+  border-radius: 50%;
+   border: 3px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
   float: left;
-  transition: all 0.5s ease;
+  
 }
 
 
@@ -72,46 +66,42 @@ it should always be at the center of the browser */
 to align it properly */
 .navigation,.navigation-project,.navigation-skill ul li .fa {
   color: #D8E2DC;
-  transition: all 0.5s ease;
 }
 
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
 /*facebook*/
-.navigation ul li:hover .navicon {
-  border: 5px solid #bc2a8d;
+.navigation ul li.navicon {
+  border: 3px solid #bc2a8d;
   box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  
 }
 
-.navigation ul li:hover .fa-bars {
-  color: #bc2a8d;
+.navigation ul li .fa-bars {
   text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  
 }
 
-.navigation-project ul li:hover .navicon {
-  border: 5px solid #bc2a8d;
+.navigation-project ul li .navicon {
+  border: 3px solid #bc2a8d;
   box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  
 }
 
-.navigation-project ul li:hover .fa-bars {
-  color: #bc2a8d;
+.navigation-project ul li .fa-bars {
   text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  
 }
 
-.navigation-skill ul li:hover .navicon {
-  border: 5px solid #bc2a8d;
+.navigation-skill ul li .navicon {
+  border: 3px solid #bc2a8d;
   box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  
 }
 
-.navigation-skill ul li:hover .fa-bars {
-  color: #bc2a8d;
+.navigation-skill ul li .fa-bars {
   text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  
 }
 
 .drop {

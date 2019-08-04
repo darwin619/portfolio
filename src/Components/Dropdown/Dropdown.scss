@@ -10,9 +10,9 @@
   top: 0px;
   left: 0px;
   z-index: 5;
-    animation: moveInTop 0.7s ease-out;
+    animation: moveInDrop 0.7s ease-out;
 
-     @keyframes moveInTop {
+     @keyframes moveInDrop {
       0% {
         opacity: 0;
         transform: translateX(-20rem); }

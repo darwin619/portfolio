@@ -10,6 +10,15 @@ class Homepage extends React.Component {
 	render() {
 		return(
 			<div className="homepage">
+			<div className="header">
+					<div className="home">
+					<Navigation homepage />
+					</div>
+					<div className="social">
+					<SocialIcons />
+					</div>
+			</div>
+			<div className="homepage-container">
 				<div>
 					<img src={Profile} alt="profile" className="profileimage"/>
 				</div>
@@ -24,8 +33,7 @@ class Homepage extends React.Component {
 			 <CustomButton>Linkedin</CustomButton>
 			 <CustomButton>Github</CustomButton>
 			 </div>
-			 <SocialIcons />
-			 <Navigation homepage />
+			 </div>
 			</div>
 			);
 	}

@@ -14,22 +14,18 @@ class Navigation extends React.Component {
 		const {homepage,project,skill} = this.props;
 		
 	return ( 
-		<div onClick={() => this.setState({hidden: !this.state.hidden})}>
 		<div className = {
 		`${homepage ? 'navigation' : ''}
 		 ${project ? 'navigation-project' : ''} 
 		 ${skill ? 'navigation-skill' : ''} 
-		 `} >
+		 `} onClick={() => this.setState({hidden: !this.state.hidden})} >
   			<ul>
-			    <li className="navicon"><i 
-			    className="fa fa-bars fa-2x" 
-			    aria-hidden="true"></i></li>
+			    <li className="wrapper"><i className="fa fa-bars fa-2x" aria-hidden="true"></i></li>
   			</ul>
   			<div className="drop">
   			{
   				this.state.hidden ? null : <Dropdown them={skill} they={homepage} then={skill} />
   			}
- 			</div>
 		</div>
 		</div>
 		
