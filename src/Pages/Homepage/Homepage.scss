@@ -6,8 +6,6 @@
     padding:0;
     margin:0;
     top:0;
-    width: 100%;
-    height: 100%;
     @media screen and (max-width: 600px) {
 		overflow: auto;
 }
@@ -135,14 +133,20 @@
 }
 
 
-	.buttons {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		display: inline-block;
-		animation: moveInBottom 1.5s ease-out;
-		margin-left: 20px;
+.buttons {
+	display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    grid-template-rows: 1fr; 
+	width: 90%;
+	margin: 0 auto;
+	animation: moveInBottom 1.5s ease-out;
+	 @media screen and (max-width: 600px) {
+        margin-bottom: 40px;
 }
+
+}
+
 
 
 		 @keyframes moveInBottom {
@@ -153,9 +157,8 @@
 	      opacity: 1;
 	      transform: translateY(0); } }
 		
-	
-
 	}
+
 
 
 

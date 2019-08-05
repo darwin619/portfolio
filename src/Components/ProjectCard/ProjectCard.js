@@ -16,7 +16,8 @@ const ProjectCard = ({project: {title, imageUrl, description, github, live}}) =>
 				</div>
 				<div className="flip-card-back">
 					<div className="project-buttons">
-						<CustomButton onClick={() => window.open(`${github}`, '_blank') } >View On Github</CustomButton>
+					<div className="github">
+						<CustomButton onClick={() => window.open(`${github}`, '_blank') } >View On Github</CustomButton></div>
 						<CustomButton onClick={() => window.open(`${live}`, '_blank') } >Live Site</CustomButton>
 					</div>
 				</div>

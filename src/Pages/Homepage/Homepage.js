@@ -26,12 +26,14 @@ class Homepage extends React.Component {
 				<h1 className="title">Hi, I'm Shivam Aima.</h1>
 			  	<span className="subtitle">A Frontend Developer</span>
 			 </div>
+			 <div className="buttons-container">
 			 <div className="buttons">
 			 <CustomButton onClick={() => this.props.history.push('/skills')} >My Skills</CustomButton>
 			 <CustomButton onClick={() => this.props.history.push('/projects')} >Portfolio</CustomButton>
 			 <CustomButton>Resume</CustomButton>
 			 <CustomButton>Linkedin</CustomButton>
 			 <CustomButton>Github</CustomButton>
+			 </div>
 			 </div>
 			 </div>
 			</div>
