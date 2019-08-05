@@ -78,8 +78,12 @@ to align it properly */
 }
 
 .navigation ul li .fa-bars {
+  transition: all 0.5s ease;
   text-shadow: 0 0 15px #C704F6;
-  
+}
+
+.navigation ul li:hover .fa-bars {
+  color: #bc2a8d;
 }
 
 .navigation-project ul li .navicon {
@@ -93,6 +97,11 @@ to align it properly */
   
 }
 
+.navigation-project ul li:hover .fa-bars {
+  color: #bc2a8d;
+}
+
+
 .navigation-skill ul li .navicon {
   border: 3px solid #C704F6;
   box-shadow: 0 0 15px #C704F6;
@@ -104,9 +113,13 @@ to align it properly */
   
 }
 
+.navigation-skill ul li:hover .fa-bars {
+  color: #bc2a8d;
+}
+
+
 .drop {
   position: absolute;
   top: -40%;
   left: -35%;
-
 }

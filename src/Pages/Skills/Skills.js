@@ -9,12 +9,14 @@ const Skills = () => {
 		<div className="skill-page">
 			<div className="skills">
 				<h1 className="title">My Skills</h1>
+			</div>
+			<div className="grid">
 			<div className="container">
 			{
 				SkillData.map(item => <SkillCard key={item.id} item={item} />)
 			}
 			</div>
-    	    </div>
+			</div>
     	    <Navigation skill />
     	</div>
 		);
