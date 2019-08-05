@@ -16,7 +16,15 @@
 		cursor: pointer;
 	}
 	&:hover .flip-card-inner {
+		@media screen and (min-width: 600px) {
   			transform: rotateY(-180deg);
+		}
+  	}
+
+  	&:active .flip-card-inner {
+  		 @media screen and (max-width: 600px) {
+		transform: rotateY(-180deg);
+}
   	}
 
 	.flip-card-inner {
