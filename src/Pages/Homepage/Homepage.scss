@@ -10,50 +10,30 @@
 		overflow: auto;
 }
 
-    .header {
-	display: inline-block;
-	width: 100%;
-	box-sizing: border-box;
-	margin-top: 20px;
-    }
-
-    .home {
-    	position: absolute;
-    	left: 4px;
-    }
-
-    .social {
-    	display: flex;
-    	justify-content: flex-end;
-
-    }
-
-    .homepage-container {
-		margin-top: 25px;
-		@media screen and (max-width: 600px) {
-			margin-top: 40px;
+.homepage-container {
+	margin-top: 25px;
+	@media screen and (max-width: 600px) {
+		margin-top: 40px;
 }
-    }
-	
+}
 
+.profileimage {
+	width: 103px;
+	height: 103px;
+	clip-path: circle(50% at 50% 50%);
+	animation: moveInTop 1.5s;
 
-	.profileimage {
-		width: 103px;
-		height: 103px;
-		clip-path: circle(50% at 50% 50%);
-		animation: moveInTop 1.5s;
+	 @keyframes moveInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-5rem); }
+    100% {
+      opacity: 1;
+      transform: translateY(0); } }
 
-		 @keyframes moveInTop {
-	    0% {
-	      opacity: 0;
-	      transform: translateY(-5rem); }
-	    100% {
-	      opacity: 1;
-	      transform: translateY(0); } }
-
-	         @media screen and (max-width: 600px) {
-			    width: 93px;
-		height: 93px;
+   @media screen and (max-width: 600px) {
+		    width: 93px;
+			height: 93px;
 }
 }
 
@@ -61,7 +41,7 @@
 		display: inline-block;
 		margin-bottom: 25px;
 
-	.title {
+   .title {
 		color: white;
 		font-size: 4.15rem;
 		text-transform: capitalize;
@@ -76,7 +56,7 @@
 			    font-size: 2.1rem;
 }
 
-     @keyframes moveInLeft {
+   @keyframes moveInLeft {
 	    0% {
 	      opacity: 0;
 	      transform: translateX(-100%); }
@@ -147,9 +127,7 @@
 
 }
 
-
-
-		 @keyframes moveInBottom {
+@keyframes moveInBottom {
 	    0% {
 	      opacity: 0;
 	      transform: translateY(20rem); }
@@ -158,9 +136,6 @@
 	      transform: translateY(0); } }
 		
 	}
-
-
-
 
 
 

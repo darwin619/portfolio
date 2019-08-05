@@ -2,22 +2,13 @@ import React from 'react';
 import './Homepage.scss';
 import Profile from './Profile.jpg';
 import CustomButton from '../../Components/CustomButton/CustomButton';
-import SocialIcons from '../../Components/SocialIcons/SocialIcons';
-import Navigation from '../../Components/Navigation/Navigation';
+import Header from '../../Components/Header/Header';
 
 
-class Homepage extends React.Component {
-	render() {
+const Homepage = (props) => {
 		return(
 			<div className="homepage">
-			<div className="header">
-					<div className="home">
-					<Navigation homepage />
-					</div>
-					<div className="social">
-					<SocialIcons />
-					</div>
-			</div>
+			<Header homepage/>
 			<div className="homepage-container">
 				<div>
 					<img src={Profile} alt="profile" className="profileimage"/>
@@ -38,7 +29,6 @@ class Homepage extends React.Component {
 			 </div>
 			</div>
 			);
-	}
 }
 
 export default Homepage;
