@@ -6,11 +6,25 @@
 	box-shadow:
 	  0  0px 20px rgba(154,160,185,0.05),
 	  0 0px 8px rgba(166,173,201,0.2);
+	 @media screen and (max-width: 600px) {
+		 box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
 
-	&:hover {
+&:hover {
+@media screen and (min-width: 600px) {
 		opacity: 0.5;
 		cursor: pointer;
-	}
+	}		 
+}
+
+&:active {
+@media screen and (max-width: 600px) {
+		 opacity: 0.5;
+		cursor: pointer;
+		 
+}
+}
+
 
 	.inner{
 		display: flex;
