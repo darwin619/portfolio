@@ -1,11 +1,14 @@
 .projectcollection {
 	display: grid;
-	grid-template-columns: 4fr 4fr 4fr;
-	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    grid-gap: 30px;
+    grid-template-rows: 1fr; 
 	margin-top: 30px;
 	margin-bottom: 40px;
-	margin-left: 30px;
+	@media screen and (min-width: 600px) {
+		margin-left: 30px;
 }
+	}
 
 .title {
 	color: white;
@@ -29,4 +32,22 @@
     box-sizing: border-box;
 }
 
+.container {
+	display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    grid-template-rows: 1fr; 
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+.grid {
+	@media screen and (max-width: 600px) {
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom: 60px;
+		width: 100%;
+}
+}
 
