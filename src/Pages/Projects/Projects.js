@@ -2,7 +2,6 @@ import React from 'react';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import ProjectData from './ProjectData';
 import './Projects.scss';
-import Navigation from '../../Components/Navigation/Navigation';
 import Header from '../../Components/Header/Header';
 
 const Projects = () => {

@@ -2,7 +2,6 @@ import React from 'react';
 import './Skills.scss';
 import SkillData from './SkillData';
 import SkillCard from '../../Components/SkillCard/SkillCard';
-import Navigation from '../../Components/Navigation/Navigation';
 import Header from '../../Components/Header/Header';
 
 const Skills = () => {
