@@ -5,7 +5,7 @@ import CustomButton from '../../Components/CustomButton/CustomButton';
 import Header from '../../Components/Header/Header';
 
 
-const Homepage = (props) => {
+const Homepage = ({history}) => {
 		return(
 			<div className="homepage">
 			<Header homepage/>
@@ -19,8 +19,8 @@ const Homepage = (props) => {
 			 </div>
 			 <div className="buttons-container">
 			 <div className="buttons">
-			 <CustomButton onClick={() => this.props.history.push('/skills')} >My Skills</CustomButton>
-			 <CustomButton onClick={() => this.props.history.push('/projects')} >Portfolio</CustomButton>
+			 <CustomButton onClick={() => history.push('/skills')} >My Skills</CustomButton>
+			 <CustomButton onClick={() => history.push('/projects')} >Portfolio</CustomButton>
 			 <CustomButton>Resume</CustomButton>
 			 <CustomButton>Linkedin</CustomButton>
 			 <CustomButton>Github</CustomButton>

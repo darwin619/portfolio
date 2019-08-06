@@ -4,23 +4,19 @@ import SocialIcons from '../SocialIcons/SocialIcons';
 import Navigation from '../Navigation/Navigation';
 import DropDown from '../DropDown/DropDown';
 
+import {selectDropHidden} from '../../Redux/Drop/drop-selectors';
+import {toggleHideDropdown} from '../../Redux/Drop/drop-actions';
+import {createStructuredSelector} from 'reselect';
+import { connect } from 'react-redux';
 
-class Header extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			hidden: true
-		};
-	}
+const Header = ({hidden,homepage, projects,toggleHideDropdown, skills}) => {
 
-	render() {
-		const {homepage, projects, skills} = this.props;
 		return (
 			<div className="header">
 			    {
-  				this.state.hidden ? null : <DropDown />
+  				hidden ? null : <DropDown />
 			    }
-					<div className="home" onClick={() => this.setState({hidden: !this.state.hidden})}>
+					<div className="home center" onClick={toggleHideDropdown}>
 					<Navigation />
 					</div>
 
@@ -31,12 +27,12 @@ class Header extends React.Component {
 					}
 					{
 						skills
-						? (<div className="header-title">My Skills</div>)
+						? (<div className="center header-title">My Skills</div>)
 						: ""
 					}
 					{
 						projects
-						? (<div className="header-title">My Projects</div>)
+						? (<div className="center header-title">My Projects</div>)
 						: ""
 					}
 					
@@ -44,6 +40,14 @@ class Header extends React.Component {
 			
 			);
 	}
-}
 
-export default Header;
+
+const mapStateToProps = createStructuredSelector({
+  hidden: selectDropHidden
+});
+
+const mapDispatchToProps = dispatch => ({ 
+	toggleHideDropdown: () => dispatch(toggleHideDropdown())
+}) 
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

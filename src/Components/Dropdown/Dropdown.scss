@@ -5,18 +5,31 @@
   z-index: 1;
   top: 0;
   left: 0;
+  opacity: 0.95;
    background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
-  animation: moveInDrop 1.7s ease-out;
+  animation: moveToBottom 0.7s ease-out;
 
-     @keyframes moveInDrop {
+     @keyframes moveToBottom {
       0% {
         opacity: 0;
-        transform: translateX(-20rem); }
+        transform: translateY(-20rem); }
       100% {
         opacity: 1;
         transform: translateY(0); } }
+}
+
+
+.close {
+  transition: 0.5s;
+   animation: moveToTop 0.7s ease-out;
+
+     @keyframes moveToTop {
+      0% {
+        transform: translateY(0); }
+      100% {
+        transform: translateY(-20rem); } }
 }
 
 
@@ -55,8 +68,8 @@
 
 .exit {
   position: absolute;
-  top: 7%;
-  left: 3%;
+  top: 3.2%;
+  left: 0.1%;
   width: 53px;
 }
 
@@ -96,3 +109,8 @@
   text-shadow: 0 0 15px #bc2a8d;
   transition: all 0.5s ease;
 }
+
+
+
+
+

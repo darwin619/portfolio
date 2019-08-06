@@ -2,15 +2,19 @@ import React from 'react';
 import './DropDown.scss';
 import { Link } from 'react-router-dom';
 
-const DropDown = () =>  {
+import {toggleHideDropdown} from '../../Redux/Drop/drop-actions';
+
+import { connect } from 'react-redux';
+
+const DropDown = ({toggleHideDropdown}) => {
 		return (
 			<div className="overlay">
-				<div className="exit">
+				<div className="exit" >
 					<ul>
-			    		<li className="exitmenu"><i className="fa fa-times fa-2x" aria-hidden="true"></i></li>
+			    		<li className="exitmenu" onClick={toggleHideDropdown}><i className="fa fa-times fa-2x" aria-hidden="true"></i></li>
   					</ul>
   				</div>
-				<div className="overlay-content">
+				<div className="overlay-content" onClick={toggleHideDropdown}>
 				    <Link to='/' >Home</Link>
 					<Link to='/skills' >Skills</Link>
 					<Link to='/projects' >Portfolio</Link>
@@ -22,4 +26,8 @@ const DropDown = () =>  {
 			);
 	}
 
-export default DropDown;
+const mapDispatchToProps = dispatch => ({ 
+	toggleHideDropdown: () => dispatch(toggleHideDropdown())
+}) 
+
+export default connect(null, mapDispatchToProps)(DropDown);
