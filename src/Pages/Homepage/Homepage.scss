@@ -134,7 +134,85 @@
 	    100% {
 	      opacity: 1;
 	      transform: translateY(0); } }
-		
+
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  font-weight: lighter;
+
+ text-transform: uppercase;
+   @media screen and (max-width: 600px) {
+        bottom: -20%;
+
+}
+
+}
+
+.neon {
+  color: #bc2a8d;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-bottom: 5px;
+   @media screen and (max-width: 600px) {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+}
+
+}
+
+
+
+.neon {
+  animation: neon 2s ease infinite;
+  -moz-animation: neon 2s ease infinite;
+  -webkit-animation: neon 2s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 .1rem #C704F6, 0 0 .1rem #C704F6, 0 0 .1rem #C704F6, 0 0 .1rem #C704F6, 0 0 .1rem #FED128, .1rem .1rem .1rem #806914;
+    color: #bc2a8d;
+  }
+  50% {
+    text-shadow: 0 0 .1rem #800E0B, 0 0 1 .1rem #800E0B, 0 0 .1rem #800E0B, 0 0 .1rem #800E0B, 0 0 .1rem #800E0B, .1rem .1rem .1rem #40340A;
+    color: white;
+  }
+}
+
+
+
+.snapButton {
+  text-align: center;
+  position: fixed;
+  bottom: 40px;
+  width: 100%;
+}
+
+.snapButton > button {
+  font-size: 60px;
+  font-weight: bold;
+}
+.snapButton img {
+  width: 150px;
+}
+
+
 	}
 
 

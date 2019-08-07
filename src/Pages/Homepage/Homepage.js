@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Homepage.scss';
 import Profile from './Profile.jpg';
 import CustomButton from '../../Components/CustomButton/CustomButton';
 import Header from '../../Components/Header/Header';
+import Thanos from "react-thanos";
+import InfinityGauntlet from "react-thanos-snap";
+import logo from "./HomepageSnap/download.png";
 
 
 const Homepage = ({history}) => {
+	const [snap, setSnap] = useState(false);
 		return(
+
 			<div className="homepage">
+			<InfinityGauntlet snap={snap}>
 			<Header homepage/>
 			<div className="homepage-container">
 				<div>
@@ -27,6 +33,13 @@ const Homepage = ({history}) => {
 			 </div>
 			 </div>
 			 </div>
+			 	  
+			</InfinityGauntlet>
+			 <div className="snapButton">
+			 		<button onClick={() => setSnap(!snap)}>
+		          <img src={logo} />
+		        </button>
+					</div>
 			</div>
 			);
 }
