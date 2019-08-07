@@ -26,6 +26,10 @@ it should always be at the center of the browser */
   border: 3px solid #C704F6;
   box-shadow: 0 0 15px #C704F6;
   float: left;
+  @media screen and (min-width: 600px) {
+    border: 3px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    }
 
 }
 
@@ -37,10 +41,7 @@ to align it properly */
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
 /*facebook*/
-.wrapper ul li.facebook {
-  border: 3px solid #C704F6;
-  box-shadow: 0 0 15px #C704F6;
-}
+
 
 .wrapper ul li .fa-facebook {
  
@@ -54,11 +55,7 @@ to align it properly */
 }
 
 
-/* instagram */
-.wrapper ul li.instagram {
-  border: 3px solid #C704F6;
-  box-shadow: 0 0 15px #C704F6;
-}
+
 
 .wrapper ul li .fa-instagram {
   text-shadow: 0 0 15px #C704F6;
@@ -70,11 +67,7 @@ to align it properly */
 }
 
 
-/* google */
-.wrapper ul li.google {
-  border: 3px solid #C704F6;
-  box-shadow: 0 0 15px #C704F6;
-}
+
 
 .wrapper ul li .fa-google {
   text-shadow: 0 0 15px #C704F6;

@@ -24,6 +24,10 @@ it should always be at the center of the browser */
    border: 3px solid #C704F6;
   box-shadow: 0 0 15px #C704F6;
   float: left;
+  @media screen and (min-width: 600px) {
+    border: 3px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    }
   
 }
 
