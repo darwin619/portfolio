@@ -37,7 +37,7 @@ const Homepage = ({history}) => {
 			 </InfinityGauntlet>
 
 
-
+			<div className="footer">
 			 <Thanos  className="thanos"
 					  onSnap={() => setSnap(!snap) }
 					  onSnapReverse={() => setSnap(!snap) }
@@ -47,6 +47,7 @@ const Homepage = ({history}) => {
 			 			 
 				    <h1 className="made">Copyright©2019, React is</h1>
 				    <i class="fa fa-heart-o heart-off" aria-hidden="true"></i>
+			</div>
 			</div>
 	
 			</div>

@@ -9,6 +9,13 @@ html {
 	  background-size: cover;
 	  height: 100%;
 	  overflow: hidden;
+	  position: relative;
+}
+
+body {
+	 margin:0;
+   padding:0;
+   height:100%;
 }
 
 /*Components/Background/Kards10/images/intro-bg.jpg*/
