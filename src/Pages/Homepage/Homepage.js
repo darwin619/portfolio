@@ -45,7 +45,7 @@ const Homepage = ({history}) => {
 			 
 			 <div className="text">
 			 			 
-				    <h1 className="made">Copyright©2019, React is</h1>
+				    <h1 className="made">Copyright©2019, ReactJS is</h1>
 				    <i class="fa fa-heart-o heart-off" aria-hidden="true"></i>
 			</div>
 			</div>
