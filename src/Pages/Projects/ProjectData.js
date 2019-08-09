@@ -2,7 +2,7 @@ const ProjectData = [
 {
 	id: 1,
 	title: "SmartBrain App",
-	imageUrl: "https://i.ibb.co/mtgK29T/5.jpg",
+	imageUrl: "https://i.ibb.co/X8rgrHz/Whats-App-Image-2019-08-09-at-10-19-54-PM.jpg",
 	description: `This project uses React JS for the front-end and a NodeJs/Express + PostgreSQL server and 
 	database configuration for the back-end to create a fully responsive web application that pings the
 	Clarifai API for face detection in images and displays the image with a bounding box around the face along with the name
