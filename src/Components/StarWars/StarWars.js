@@ -15,13 +15,18 @@ const StarWars = () => {
 				</div>
 			<p>
 			<i>EPISODE IV A NEW HOPE</i>
-			It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire’s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet. 
+			Hi, I am Shivam Aima. I'm an aspiring Frontend Developer and a Computer science graduate, currently on some internship work. A couple of years back when I was introduced to the world of web development, the endless possibilities of what we can do with this skill blew my mind away. And I have been caught in its web ever since. And I never plan on stopping. I am passionately in love with the technologies I have learned in this long journey and really looking forward to increase the depth of my understanding of these technologies as I finally start looking for employement openly.<br />
 
-		Pursued by the Empire’s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy….</p>	
+I have also been an Internet marketer with a lot of video editing and photoshop skills. I have lived more in the internet world than I ever have in the real world.<br />
+
+I try my hardest to work on each project. I love solving puzzles and can often find solutions to tough problems. I am highly-motivated, self-driven, fast learner and eager to be a part of the team, learn new technologies, become a valuable employee of the company and bring it success. When I’m not programming, you can find me playing video games or learning and reading more about web development. <br />
+
+I solemnly swear that I'll work tirelessly on any kind of work offered.<br />
+
+Oh and also, the force is strong with this one!</p>	
 			</div>
 		</div>
-		<audio preload="auto" autoPlay>
-		  <source src={starwars} type="audio/mpeg" />
+		<audio preload="auto" autoPlay src={starwars} >
 		</audio>
 		</div>
   			
