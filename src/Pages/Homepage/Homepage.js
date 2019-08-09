@@ -4,8 +4,7 @@ import Profile from './Profile.jpg';
 import CustomButton from '../../Components/CustomButton/CustomButton';
 import Header from '../../Components/Header/Header';
 import Thanos from "react-thanos";
-import InfinityGauntlet from "react-thanos-snap";
-import logo from "./HomepageSnap/download.png";
+import StarWars from '../../Components/StarWars/StarWars';
 
 const Homepage = ({history}) => {
 	const [snapp, setSnapp] = useState(false);
@@ -14,8 +13,8 @@ const Homepage = ({history}) => {
 			<div className="homepage">
 				<div className="content">
 					<Header homepage className="navheader"/>
-					 
-						<div className={`${snapp ? 'rotation' : ''} homepage-container `} >
+						{ snapp ? (<StarWars />)  
+						: (<div className="homepage-container" >
 							<div>
 								<img src={Profile} alt="profile" className="profileimage"/>
 							</div>
@@ -32,7 +31,7 @@ const Homepage = ({history}) => {
 								 <CustomButton  onClick={() => window.open(`https://bit.ly/shivam_github`, '_blank') } >Github</CustomButton>
 							 </div>
 						 </div>
-						 </div>
+						 </div>) }
 					 
 				 </div>
 

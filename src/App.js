@@ -5,7 +5,6 @@ import Homepage from './Pages/Homepage/Homepage';
 import { Route } from 'react-router-dom';
 import Skills from './Pages/Skills/Skills';
 import Projects from './Pages/Projects/Projects';
-import Thanos from "react-thanos";
 
 function App() {
   return (
