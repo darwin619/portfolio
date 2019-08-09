@@ -31,7 +31,7 @@ const SkillData = [
 },
 {
 	id: 7,
-	imageUrl: "https://png2.kisspng.com/sh/a5ef5489787b81269c2763fbf0367623/L0KzQYm3VcEyN5xpfZH0aYP2gLBuTgJmbKZ9ReRuYXP3PbvolvF0a6NuiOY2doXoPbv6TgNqdphxfZ95YXfoPbL3kPxqa5J5RadqZkXmdLa7UsRmbWI6Rqo5NkG8R4q9UcUzPmE6UKYBOEG4QYS1kP5o/kisspng-redux-react-javascript-vue-js-single-page-applicat-5af5cde424ee15.8061979615260584681513.png",
+	imageUrl: "https://i.ibb.co/wcXZwKf/kisspng-redux-react-javascript-vue-js-single-page-applicat-5af5cde424ee15-8061979615260584681513.png",
 	name: "Redux"
 },
 {
