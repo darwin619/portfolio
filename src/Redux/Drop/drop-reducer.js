@@ -1,7 +1,7 @@
-import DropActionTypes from './drop-types';
+import DropActionTypes from "./drop-types";
 
 const INITIAL_STATE = {
-  hidden: true,
+  hidden: true
 };
 
 const dropReducer = (state = INITIAL_STATE, action) => {

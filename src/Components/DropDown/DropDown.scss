@@ -6,32 +6,36 @@
   top: 0;
   left: 0;
   opacity: 0.95;
-   background-color: black;
+  background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
   animation: moveToBottom 0.7s ease-out;
 
-     @keyframes moveToBottom {
-      0% {
-        opacity: 0;
-        transform: translateY(-20rem); }
-      100% {
-        opacity: 1;
-        transform: translateY(0); } }
+  @keyframes moveToBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(-20rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
-
 
 .close {
   transition: 0.5s;
-   animation: moveToTop 0.7s ease-out;
+  animation: moveToTop 0.7s ease-out;
 
-     @keyframes moveToTop {
-      0% {
-        transform: translateY(0); }
-      100% {
-        transform: translateY(-20rem); } }
+  @keyframes moveToTop {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20rem);
+    }
+  }
 }
-
 
 .overlay-content {
   position: relative;
@@ -40,9 +44,9 @@
   text-align: center;
   margin-top: 30px;
   margin: 0 auto;
-   @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     top: 17%;
-    }
+  }
 }
 
 .overlay a {
@@ -52,22 +56,16 @@
   color: white;
   display: block;
   transition: 0.3s;
-   text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: lighter;
   text-shadow: 0 0 15px #bc2a8d;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #bc2a8d;
-    text-shadow: 0 0 15px #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
 }
-
-
-
-
-
-
-
 
 .exit {
   position: absolute;
@@ -89,14 +87,13 @@
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid #C704F6;
+  border: 2px solid #c704f6;
   float: left;
   transition: all 0.5s ease;
   @media screen and (min-width: 600px) {
     border: 3px solid #bc2a8d;
     box-shadow: 0 0 15px #bc2a8d;
-    }
-
+  }
 }
 
 .exit ul li .fa {
@@ -112,12 +109,7 @@
 }
 
 .exit ul li:hover .fa-times {
-  color: #D8E2DC;
+  color: #d8e2dc;
   text-shadow: 0 0 15px #bc2a8d;
   transition: all 0.5s ease;
 }
-
-
-
-
-

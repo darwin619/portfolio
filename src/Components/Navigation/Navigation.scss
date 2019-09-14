@@ -1,17 +1,13 @@
 /* Let's style the wrapper in such away that, 
 it should always be at the center of the browser */
 .navigation {
-   position: absolute;
+  position: absolute;
 }
-
-
-
 
 /* Style the Un-order list by setting its list-style to none */
 .navigation ul {
   list-style: none;
 }
-
 
 .navigation ul li {
   width: 47px;
@@ -21,32 +17,30 @@ it should always be at the center of the browser */
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
-   border: 3px solid #C704F6;
-  box-shadow: 0 0 15px #C704F6;
+  border: 3px solid #c704f6;
+  box-shadow: 0 0 15px #c704f6;
   float: left;
   @media screen and (min-width: 600px) {
     border: 3px solid #bc2a8d;
     box-shadow: 0 0 15px #bc2a8d;
-    }
-  
+  }
 }
 
 .navigation ul li .fa {
-  color: #D8E2DC;
+  color: #d8e2dc;
 }
 
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
 /*facebook*/
 .navigation ul li.navicon {
-  border: 3px solid #C704F6;
-  box-shadow: 0 0 15px #C704F6;
-  
+  border: 3px solid #c704f6;
+  box-shadow: 0 0 15px #c704f6;
 }
 
 .navigation ul li .fa-bars {
   transition: all 0.5s ease;
-  text-shadow: 0 0 15px #C704F6;
+  text-shadow: 0 0 15px #c704f6;
 }
 
 .navigation ul li:hover .fa-bars {

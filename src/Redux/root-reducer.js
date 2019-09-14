@@ -1,9 +1,8 @@
-import { combineReducers } from 'redux';
-import dropReducer from './Drop/drop-reducer';
+import { combineReducers } from "redux";
+import dropReducer from "./Drop/drop-reducer";
 
 const rootReducer = combineReducers({
-	drop: dropReducer,
-	
+  drop: dropReducer
 });
 
 export default rootReducer;
