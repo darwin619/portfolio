@@ -20,9 +20,30 @@ const DropDown = ({ toggleHideDropdown }) => {
         <Link to="/">Home</Link>
         <Link to="/skills">Skills</Link>
         <Link to="/projects">Portfolio</Link>
-        <a href="google.com">Resume</a>
-        <a href="google.com">Linkedin</a>
-        <a href="google.com">Github</a>
+        <div
+          className="option"
+          onClick={() =>
+            window.open(`http://bit.ly/ShivamAimaResume`, "_blank")
+          }
+        >
+          Resume
+        </div>
+        <div
+          className="option"
+          onClick={() =>
+            window.open(`https://bit.ly/shivam_linkedin`, "_blank")
+          }
+        >
+          Linkedin
+        </div>
+        <div
+          className="option"
+          onClick={() =>
+            window.open(`https://bit.ly/shivam_github`, "_blank")
+          }
+        >
+          Github
+        </div>
       </div>
     </div>
   );

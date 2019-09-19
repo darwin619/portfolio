@@ -49,7 +49,7 @@
   }
 }
 
-.overlay a {
+.overlay a, .option {
   padding-bottom: 22px;
   text-decoration: none;
   font-size: 36px;
@@ -59,10 +59,11 @@
   text-transform: uppercase;
   font-weight: lighter;
   text-shadow: 0 0 15px #bc2a8d;
+  cursor: pointer;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+.overlay a:hover, .option:hover,
+.overlay a:focus, .option:focus {
   color: #bc2a8d;
   text-shadow: 0 0 15px #bc2a8d;
 }
