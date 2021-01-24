@@ -1,15 +1,11 @@
 const ProjectData = [
   {
     id: 1,
-    title: "SmartBrain App",
-    imageUrl:
-      "https://i.ibb.co/X8rgrHz/Whats-App-Image-2019-08-09-at-10-19-54-PM.jpg",
-    description: `This project uses React JS for the front-end and a NodeJs/Express + PostgreSQL server and 
-	database configuration for the back-end to create a fully responsive web application that pings the
-	Clarifai API for face detection in images and displays the image with a bounding box around the face along with the name
-	of the celebrity.`,
-    github: "https://github.com/darwin619/Smartbrain_Frontend",
-    live: "https://smart-brain-by-shivam.herokuapp.com/"
+    title: "Netflix Clone",
+    imageUrl: "https://i.ibb.co/brcXYzL/netflix-clone.jpg",
+    description: `Netflix clone made with advanced react, redux & firebase which uses redux thunk to asynchronously fetch movie data of over 30 thousand movies from Tmdb api. Features include a multi-active searchbar, user signup and signin, add to list option for each user, trailer links, dynamically generated movie and tv show pages and an interactive UI replicated from the original netflix app. `,
+    github: "https://github.com/darwin619/Netflix-Clone",
+    live: "https://netflix-clone-by-shivam.netlify.com/"
   },
   {
     id: 2,
@@ -23,12 +19,17 @@ const ProjectData = [
   },
   {
     id: 3,
-    title: "Netflix Clone",
-    imageUrl: "https://i.ibb.co/brcXYzL/netflix-clone.jpg",
-    description: `Netflix clone made with advanced react, redux & firebase which uses redux thunk to asynchronously fetch movie data of over 30 thousand movies from Tmdb api. Features include a multi-active searchbar, user signup and signin, add to list option for each user, trailer links, dynamically generated movie and tv show pages and an interactive UI replicated from the original netflix app. `,
-    github: "https://github.com/darwin619/Netflix-Clone",
-    live: "https://netflix-clone-by-shivam.netlify.com/"
+    title: "SmartBrain App",
+    imageUrl:
+      "https://i.ibb.co/X8rgrHz/Whats-App-Image-2019-08-09-at-10-19-54-PM.jpg",
+    description: `This project uses React JS for the front-end and a NodeJs/Express + PostgreSQL server and 
+	database configuration for the back-end to create a fully responsive web application that pings the
+	Clarifai API for face detection in images and displays the image with a bounding box around the face along with the name
+	of the celebrity.`,
+    github: "https://github.com/darwin619/Smartbrain_Frontend",
+    live: "https://smart-brain-by-shivam.herokuapp.com/"
   },
+
   {
     id: 4,
     title: "Robofriends",

@@ -9,7 +9,7 @@ const Background = () => {
       params={{
         particles: {
           number: {
-            value: 1200,
+            value: 300,
             density: {
               enable: true,
               value_area: 889.1476416322727

@@ -19,7 +19,7 @@ const DropDown = ({ toggleHideDropdown }) => {
       <div className="overlay-content" onClick={toggleHideDropdown}>
         <Link to="/">Home</Link>
         <Link to="/skills">Skills</Link>
-        <Link to="/projects">Portfolio</Link>
+        <Link to="/projects">Projects</Link>
         <div
           className="option"
           onClick={() =>

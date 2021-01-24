@@ -22,7 +22,7 @@ const Homepage = ({ history }) => {
               </div>
               <div className="text-box">
                 <h1 className="title">Hi, I'm Shivam Aima.</h1>
-                <span className="subtitle">A Frontend Developer</span>
+                <span className="subtitle">A Full Stack Developer</span>
               </div>
               <div className="buttons-container">
                 <div className="buttons">
@@ -30,7 +30,7 @@ const Homepage = ({ history }) => {
                     My Skills
                   </CustomButton>
                   <CustomButton onClick={() => history.push("/projects")}>
-                    Portfolio
+                    Projects
                   </CustomButton>
                   <CustomButton onClick={() => window.open(`http://bit.ly/ShivamAimaResume`, "_blank")}>
                     Resume
