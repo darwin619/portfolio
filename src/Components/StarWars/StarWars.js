@@ -7,7 +7,7 @@ const StarWars = () => {
     <div className="starwars">
       <div className="galaxy">
         <div className="logo">
-          <img src="http://vignette1.wikia.nocookie.net/disney/images/8/8b/Starwars-logo.png/revision/latest?cb=20141129122237" />
+          <img alt="star-wars" src="http://vignette1.wikia.nocookie.net/disney/images/8/8b/Starwars-logo.png/revision/latest?cb=20141129122237" />
         </div>
         <div className="fall">
           <div className="away">
