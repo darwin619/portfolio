@@ -32,7 +32,7 @@ const Homepage = ({ history }) => {
                   <CustomButton onClick={() => history.push("/projects")}>
                     Projects
                   </CustomButton>
-                  <CustomButton onClick={() => window.open(`http://bit.ly/ShivamAimaResume`, "_blank")}>
+                  <CustomButton onClick={() => window.open(`http://bit.ly/notfound`, "_blank")}>
                     Resume
                   </CustomButton>
                   <CustomButton
